@@ -1,0 +1,54 @@
+@import "../../Assets/Colors";
+
+
+#navbar {
+    position: fixed;
+    z-index: 2;
+    padding: 10px 20px;
+    border-radius: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s linear;
+
+    img {
+        max-height: 64px;
+    }
+}
+
+.navbar_extanded {
+    width: 80%;
+    margin: 50px 10%;
+    border: solid 1px rgba($WHITE, 0);
+    background-color: rgba($WHITE, 0);
+}
+
+.navbar_retracted {
+    width: 60%;
+    margin: 50px 20%;
+    background: rgba($WHITE, 0.1);
+    backdrop-filter: blur(10px);
+    border: solid 1px rgba($WHITE, 0.5);
+    border-top: solid 1px rgba($WHITE, 0.75);
+    border-left: solid 1px rgba($WHITE, 0.75);
+    box-shadow: 0 25px 45px rgba($BLACK, 0.5);
+}
+
+#navbar_sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: $WHITE;
+        font-size: 28px;
+        margin-top: 5px;
+        padding: 0;
+    }
+}

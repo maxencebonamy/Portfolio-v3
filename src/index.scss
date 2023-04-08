@@ -1,0 +1,63 @@
+@import "Assets/Colors";
+
+@font-face {
+    font-family: "Kanakira";
+    src: url("Assets/Fonts/kanakira-regular.ttf");
+}
+
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: overlay;
+    font-family: Kanakira, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    img {
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+
+        pointer-events: none;
+    }
+
+    background-color: $BLACK;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba($WHITE, 0.5);
+    width: 10px;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($WHITE, 0.8);
+    width: 10px;
+    border-radius: 5px;
+}

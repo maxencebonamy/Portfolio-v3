@@ -1,0 +1,42 @@
+import React from "react";
+import "./Circle.css";
+
+
+function Circle({x, y, radius, color}) {
+    const circleStyle = {
+        width: 2 * radius,
+        height: 2 * radius,
+        backgroundColor: color,
+        borderRadius: "50%"
+    };
+
+    const containerStyle = {
+        width: 2 * radius * 1.5,
+        height: 2 * radius * 1.5,
+        position: "absolute"
+    }
+
+    if (x >= 0) {
+        containerStyle.left = (x - radius).toString() + "px";
+    }
+    else {
+        containerStyle.right = (-x - radius*2).toString() + "px";
+    }
+
+    if (y >= 0) {
+        containerStyle.top = (y - radius).toString() + "px";
+    }
+    else {
+        containerStyle.bottom = (-y - radius*2).toString() + "px";
+    }
+
+    return (
+        <div className="circle" style={containerStyle}>
+            <div className="circle_content" style={circleStyle} />
+            <div className="circle_overlay" style={{bottom: 2.5 * radius, right: 0.5*radius}} />
+        </div>
+    );
+}
+
+
+export default Circle;

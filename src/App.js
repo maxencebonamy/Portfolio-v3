@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./Assets/Colors";
+import Home from "./Sections/Home/Home";
+import Circle from "./Components/Circle/Circle";
+import Navbar from "./Components/Navbar/Navbar";
+import About from "./Sections/About/About";
+import CallToAction from "./Components/CallToAction/CallToAction";
+import React from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    console.log("document-height",document.documentElement.offsetHeight);
+
+    return (
+        <div id="app">
+            <section id="app_background">
+                <Circle x={100} y={100} color={"#4162d8"} radius={500} />
+                <Circle x={-100} y={window.innerHeight - 100} color={"#4162d8"} radius={500} />
+                <Circle x={200} y={window.innerHeight + 600} color={"#4162d8"} radius={500} />
+                <div id="app_overlay" />
+            </section>
+            <section id="app_content">
+                <Home />
+                <About />
+            </section>
+            <Navbar />
+            <CallToAction />
+        </div>
+    );
 }
+
 
 export default App;
