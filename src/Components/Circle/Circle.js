@@ -33,7 +33,6 @@ function Circle({x, y, radius, color}) {
     return (
         <div className="circle" style={containerStyle}>
             <div className="circle_content" style={circleStyle} />
-            <div className="circle_overlay" style={{bottom: 2.5 * radius, right: 0.5*radius}} />
         </div>
     );
 }

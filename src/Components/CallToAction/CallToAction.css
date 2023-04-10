@@ -1,0 +1,56 @@
+.call_to_action {
+  transform-origin: 125px 125px;
+  position: fixed;
+  top: calc(100vh - 275px);
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.call_to_action img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 175px;
+  transition: all 0.2s linear;
+}
+.call_to_action:hover img {
+  height: 120px;
+  width: 120px;
+  bottom: 185px;
+  animation: none;
+}
+
+.call_to_action_text {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .call_to_action {
+    position: fixed;
+    top: calc(100vh - 175px);
+    right: 300px;
+  }
+  .call_to_action img {
+    height: 75px;
+    width: 75px;
+    bottom: 115px;
+  }
+  .call_to_action:hover img {
+    height: 95px;
+    width: 95px;
+    bottom: 125px;
+    animation: none;
+  }
+}
+
+/*# sourceMappingURL=CallToAction.css.map */

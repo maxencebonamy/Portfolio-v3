@@ -41,3 +41,27 @@
 .star {
     max-height: 80px;
 }
+
+
+@media screen and (max-width: 1280px) {
+    #home_title {
+        width: 90%;
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #home_star_left {
+            right: 0;
+        }
+
+        #home_star_right {
+            top: 0;
+        }
+    }
+
+    .star {
+        max-height: 50px;
+    }
+}

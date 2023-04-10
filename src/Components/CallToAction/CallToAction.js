@@ -8,12 +8,12 @@ function CallToAction() {
     return (
         <a className="call_to_action" href="https://maxencebonamy.fr">
             <div className="call_to_action_text">
-                <ReactCurvedText width='250'
-                                 height='250'
-                                 cx='125'
-                                 cy='125'
-                                 rx={75}
-                                 ry='75'
+                <ReactCurvedText width={window.innerWidth > 1280 ? "250" : "150"}
+                                 height={window.innerWidth > 1280 ? "250" : "150"}
+                                 cx={window.innerWidth > 1280 ? "125" : "75"}
+                                 cy={window.innerWidth > 1280 ? "125" : "75"}
+                                 rx={window.innerWidth > 1280 ? 75 : 50}
+                                 ry={window.innerWidth > 1280 ? 75 : 50}
                                  startOffset='0'
                                  reversed={true}
                                  text="HIRE ME - HIRE ME - HIRE ME - "

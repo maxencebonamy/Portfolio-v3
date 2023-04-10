@@ -1,0 +1,153 @@
+[
+
+    {
+        "name": "Fractal Explorer",
+        "description": "A fractal is a particularly aesthetic mathematical object in which one can, among other things, zoom to infinity and find the basic pattern, which can be experienced here.",
+        "skills": ["CPP", "SFML"],
+        "video": "fractal.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Fractal-Explorer",
+        "run": null,
+        "important": true
+    },
+    {
+        "name": "EseoNova Website",
+        "description": "Every year in my school there is a campaign week to elect the next Student Union. So I made the website of the \"EseoNova\" list.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "video": "eseonova.mp4",
+        "type": "School Project",
+        "github": "https://github.com/maxencebonamy/EseoNova",
+        "run": "https://maxencebonamy.fr/eseonova",
+        "important": true
+    },
+    {
+        "name": "Esprit Packaging",
+        "description": "Being part of a Junior Entreprise in my school, I have the opportunity to realize orders for companies. For example, I upgraded the website of a packaging company.",
+        "skills": ["WordPress", "PHP"],
+        "video": "espritpack.mp4",
+        "type": "School Project",
+        "github": null,
+        "run": "https://espritpack.com",
+        "important": true
+    },
+    {
+        "name": "Minecraft Survival",
+        "description": "This is my first video game made from scratch. As its name indicates, it is based on the principle of Minecraft, but the gameplay changes completely.",
+        "skills": ["Python", "Pygame"],
+        "video": "minecraft_survival.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Minecraft-Survival",
+        "run": null,
+        "important": true
+    },
+    {
+        "name": "Joystick Timer",
+        "description": "This is a timer made with an Arduino Uno board and two components: a joystick and a 4x7 segments display.",
+        "skills": ["Arduino", "CPP"],
+        "video": null,
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Joystick-Timer",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Ecosystem Simulation",
+        "description": "It is a representation of the Prey-Predator system, which allows to model an ecosystem.",
+        "skills": ["CPP", "SFML"],
+        "video": "ecosystem.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Ecosystem-Simulation",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "ASCII Webcam",
+        "description": "You can see yourself in real time through characters in a terminal. This project is an enhancement of another project which consists in converting an image to ASCII format, which allows, in a way, to compress it.",
+        "skills": ["Python", "OpenCV", "Numpy"],
+        "video": "ascii_webcam.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/ASCII-Webcam",
+        "run": null,
+        "important": true
+    },
+    {
+        "name": "Sand Box",
+        "description": "In this window, there are about ten elements that you can arrange wherever you want. Then, each element evolves according to the laws of physics. For example, water flows, ice melts and wood burns...",
+        "skills": ["CPP", "SFML"],
+        "video": "sandbox.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Sand-Box",
+        "run": "https://github.com/maxencebonamy/Sand-Box/releases/tag/v1.0",
+        "important": true
+    },
+    {
+        "name": "Minesweeper",
+        "description": "It is a reproduction of the famous Minesweeper game.",
+        "skills": ["CPP", "SFML"],
+        "video": "minesweeper.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Minesweeper",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Snake",
+        "description": "It is a reproduction of the famous game Snake, whose rules are qui te well known. You are in the skin of the snake, and you want to eat apples, be careful not to go out of the field and not to eat yourself.",
+        "skills": ["Python", "Pygame"],
+        "video": "snake.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Snake",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Outbreak Simulation",
+        "description": "This simulation is a model (therefore far from corresponding to reality) of an epidemic that would reach a given population represented by a grid, where each cell represents an individual.",
+        "skills": ["Python", "Pygame", "Matplotlib"],
+        "video": "outbreak.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Outbreak-Simulation",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Sierpinski Triangle",
+        "description": "The Sierpinski triangle is a geometrical figure of fractal type, that is to say that one can, among other things, zoom to infinity on this triangle.",
+        "skills": ["Python", "Pygame"],
+        "video": "sierpinski.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Sierpinski-Triangle",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Conway's Game of Life",
+        "description": "The Game of Life was invented by mathematician John Conway. It is a cellular automaton that is actually not really a game, but more a kind of simulation.",
+        "skills": ["Python", "Pygame"],
+        "video": "game_of_life.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Game-of-Life",
+        "run": null,
+        "important": false
+    },
+    {
+        "name": "Maze Generator & Solver",
+        "description": "After generating a maze, it is automatically solved by different algorithms that you can choose, both for the generation and for the resolution.",
+        "skills": ["CPP", "SFML"],
+        "video": "maze.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Maze-Generator-Solver",
+        "run": null,
+        "important": true
+    },
+    {
+        "name": "Mosaic Image",
+        "description": "Make the mosaic of an image composed of images, which can be seen only by zooming.",
+        "skills": ["Python", "Pillow", "Numpy"],
+        "video": "mosaic.mp4",
+        "type": "Personal Project",
+        "github": "https://github.com/maxencebonamy/Mosaic-Image",
+        "run": null,
+        "important": true
+    }
+]
