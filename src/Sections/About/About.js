@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./About.scss";
 import photo from "../../Assets/Images/Photo.png";
 import Tilt from "../../Components/Tilt/Tilt";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CallToAction.css";
+import "./CallToAction.scss";
 import star from "../../Assets/Images/Star.png";
 import {ReactCurvedText} from "react-curved-text";
 

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import "./Assets/Colors";
 import Home from "./Sections/Home/Home";
 import Circle from "./Components/Circle/Circle";

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from "react";
-import "./Home.css";
+import "./Home.scss";
 import star from "../../Assets/Images/Star.png";
 
 

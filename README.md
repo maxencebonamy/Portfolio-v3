@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Portfolio v3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio of Maxence Bonamy.
 
-## Available Scripts
+Single-page website presenting the author and a list of projects, each with an autoplaying video preview and the technologies it uses. This is the third version of the portfolio, it is not finished and is not hosted anywhere.
 
-In the project directory, you can run:
+![Home page of the portfolio](assets/hero.png)
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Portfolio v3](#portfolio-v3)
+	- [Table of contents](#table-of-contents)
+	- [How it works](#how-it-works)
+	- [Tech stack](#tech-stack)
+	- [Repository structure](#repository-structure)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
+	- [Running locally](#running-locally)
+	- [Useful scripts](#useful-scripts)
+	- [Tests and quality](#tests-and-quality)
+	- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How it works
 
-### `npm test`
+1. **Layout**: `src/App.js` renders five sections one after the other (Home, About, Projects, Skills, Footer), plus a navigation bar and a call to action. Blurred circles are placed in the background from the window size.
+2. **Home**: shows the title and the logo. The navigation bar links to the About, Projects and Skills sections, and retracts as soon as the page is scrolled.
+3. **Projects**: `src/Sections/Projects/Projects.json` lists 15 projects (name, description, technologies, video, type, GitHub and demo links). Each one is rendered by the `Project` component with a looping muted video.
+4. **Interaction**: project cards use `vanilla-tilt` for a tilt effect. The "Hire me" button is a curved text drawn with `react-curved-text`.
+5. **Work in progress**: the Skills and Footer sections are empty and the layout is not responsive yet.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech stack
 
-### `npm run build`
+| Layer | Technologies |
+| --- | --- |
+| Pages | React 18, Create React App (`react-scripts` 5) |
+| Styles | SCSS compiled to CSS next to each source file |
+| Libraries | `vanilla-tilt`, `react-vanilla-tilt`, `react-curved-text`, `react-full-height` |
+| Tests | Jest and React Testing Library |
+| Assets | WebP images, MP4 previews, local font (`Kanakira`) |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Repository structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+.
+├── assets/
+│   └── hero.png            README screenshot
+├── public/                 HTML template, manifests, robots.txt
+├── src/
+│   ├── Assets/             Colors, fonts, images and project videos
+│   ├── Components/         Navbar, CallToAction, Circle, Project, Tilt
+│   ├── Sections/           Home, About, Projects, Skills, Footer
+│   ├── App.js              Page composition
+│   └── index.js            Entry point
+├── package.json
+└── LICENSE
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each component and section lives in its own folder, with a `.js` file and an `.scss` file of the same name. The `.css` and `.css.map` files next to the SCSS files are compiled output and are committed.
 
-### `npm run eject`
+## Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Node.js](https://nodejs.org/) with npm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone git@github.com:maxencebonamy/Portfolio-V3.git
+cd Portfolio-V3
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running locally
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The site is then available at <http://localhost:3000> and reloads on changes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Useful scripts
 
-### Code Splitting
+| Command | Effect |
+| --- | --- |
+| `npm start` | Start the development server |
+| `npm run build` | Create a production build in `build/` |
+| `npm test` | Run the tests in watch mode |
+| `npm run eject` | Eject from Create React App (irreversible) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tests and quality
 
-### Analyzing the Bundle Size
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tests run with Jest and React Testing Library. ESLint uses the `react-app` and `react-app/jest` presets and runs during `npm start` and `npm run build`.
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
